@@ -1,2 +1,2 @@
 # nonprofit
-Build relationships between granters and nonprofits
+Build relationships between grantmakers and nonprofits
