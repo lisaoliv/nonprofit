@@ -1,6 +1,6 @@
 # nonprofit
 
-This repository contains data supporting outreach and fundraising analysis for Greater New Bedford, including Acushnet, Dartmouth, Fairhaven, Freetown, Marion, Mattapoisett, Rochester, and Wareham. The purpose is to identify prospective donors who may contribute more than $1,000 and to create a verified contact directory with accurate names, addresses, phone numbers, and emails.
+This project segments Greater New Bedford grantmakers by financial data and mission codes to identify those aligned with the nonprofit People Acting in Community Endeavors (PACE) New Bedford for capacity support.
 
 **Dataset:** `eu_ma.csv`  
 **Source:** [IRS Exempt Organizations Business Master File](https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf)
@@ -57,8 +57,6 @@ This repository contains data supporting outreach and fundraising analysis for G
 | 8 | 10,000,000 to 49,999,999 |
 | 9 | 50,000,000 or greater |
 
----
-
 ### FILING REQUIREMENT CODE TABLE
 
 | # | Form Description |
@@ -73,18 +71,6 @@ This repository contains data supporting outreach and fundraising analysis for G
 | 14 | Not required to file (instrumentalities of states or political subdivisions) |
 | 00 | Not required to file (all other) |
 
----
+**Excluded:** churches, self-declared entities, and trusts that don’t publicly file. Everything else represents the region’s active, report-filing nonprofits.
 
-### EXCLUSIONS
-
-The dataset excludes:  
-• [Self-declared organizations](https://www.irs.gov/charities-non-profits/self-declared-exempt-organizations)  
-• [Churches and religious entities](https://www.irs.gov/charities-non-profits/churches-religious-organizations) not required to file  
-• [Split-interest trusts](https://www.irs.gov/charities-non-profits/split-interest-trust-information) and non-public reporting entities  
-
----
-
-### METHODOLOGY
-
-Data originate from the [IRS Exempt Organizations Business Master File](https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf) and follow [IRS schema documentation](https://www.irs.gov/pub/irs-soi/eo_info.pdf).  
-Standardized for local use, this resource supports [community foundations](https://cof.org/foundation-type/community-foundations), [grant professionals](https://grantprofessionals.org/), and [fund development analysts](https://afpglobal.org/) identifying active exempt organizations in Greater New Bedford.
+**Method:** The workflow pulls IRS BMF data, cleans and standardizes it, and runs descriptive segmentation.
