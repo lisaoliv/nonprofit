@@ -57,6 +57,8 @@ This project segments Greater New Bedford grantmakers by financial data and miss
 | 8 | 10,000,000 to 49,999,999 |
 | 9 | 50,000,000 or greater |
 
+---
+
 ### FILING REQUIREMENT CODE TABLE
 
 | # | Form Description |
@@ -70,6 +72,8 @@ This project segments Greater New Bedford grantmakers by financial data and miss
 | 13 | Not required to file (religious organization) |
 | 14 | Not required to file (instrumentalities of states or political subdivisions) |
 | 00 | Not required to file (all other) |
+
+---
 
 **Excluded:** churches, self-declared entities, and trusts that don’t publicly file. Everything else represents the region’s active, report-filing nonprofits.
 
